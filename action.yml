@@ -4,3 +4,8 @@ description: 'Terraform CLI in Docker, 0.14.7'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+inputs:
+  args:
+    description: 'Terraform CLI arguments'
+    required: true
+    default: '--help'
